@@ -72,7 +72,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyAttribute.cs" />
     <Compile Include="MyLog.cs" />
     <Compile Include="MyUtill.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -96,6 +95,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)*.dll" "C:\Downloads\plugin"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)*.dll" "C:\Downloads\plugin"
+copy "$(TargetDir)*.dll" "F:\COM3D2\BepinEx\plugins"
+copy "$(TargetDir)*.dll" "F:\COM3D2-test\BepinEx\plugins"</PostBuildEvent>
   </PropertyGroup>
 </Project>
